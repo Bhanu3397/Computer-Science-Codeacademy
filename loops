@@ -1,0 +1,37 @@
+Loops that let us move through each item in a list, called for loops
+Loops that keep going until we tell them to stop, called while loops
+Loops that create new lists, called list comprehensions
+
+Create a For Loop:-A for loop lets us perform an action on each item in a list. Using each element of a list is known as iterating.
+The general way of writing a for loop is:
+for <temporary variable> in <list variable>:
+    <action>
+Our temporary variable can be named whatever we want and does not need to be defined beforehand. 
+
+Using Range in Loops:-
+promise = "I will not chew gum in class"
+for i in range(0,6):
+  print(promise)
+
+Infinite Loops:-
+my_favorite_numbers = [4, 8, 15, 16, 42]
+for number in my_favorite_numbers:
+  my_favorite_numbers.append(1)
+What happens here? Every time we enter the loop, we add a 1 to the end of the list that we are iterating through.
+As a result, we never make it to the end of the list! It keeps growing!
+A loop that never terminates is called an infinite loop. These are very dangerous for your code!
+
+Break:-You can stop a for loop from inside the loop by using break. When the program hits a break statement, control returns to the code outside of the for loop.
+
+Continue:-When we’re iterating through lists, we may want to skip some values.(with Continue we can skip values in the list)
+
+Nested Loops:- Going through loop inside another loop.
+
+List Comprehensions:-
+words = ["@coolguy35", "#nofilter", "@kewldawg54", "reply", "timestamp", "@matchamom", "follow", "#updog"]
+usernames = [word for word in words if word[0] == '@']
+messages = [user + " please follow me!" for user in usernames]
+Takes an element in words
+Assigns that element to a variable called word
+Checks if word[0] == '@', and if so, it adds word to the new list, usernames. If not, nothing happens.
+Repeats steps 1-3 for all of the strings in words
