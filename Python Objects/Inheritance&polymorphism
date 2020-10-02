@@ -1,0 +1,14 @@
+Inheritance:- 
+
+Exceptions
+There’s one very important family of class definitions built in to the Python language. An Exception is a class that inherits from Python’s Exception class.
+
+Super()
+Overriding methods is really useful in some cases but sometimes we want to add some extra logic to the existing method. In order to do that we need a way to call the method from the parent class. Python gives us a way to do that using super().
+
+Polymorphism:-Polymorphism is the term used to describe the same syntax (like the + operator here, but it could be a method name) doing different actions depending on the type of data.
+
+Interfaces:-An interface in Python usually refers to the names of the methods and the arguments they take. Other programming languages have more rigid definitions of what an interface is, but it usually hinges on the fact that different objects from different classes can perform the same operation
+
+Dunder Methods:-One way that we can introduce polymorphism to our class definitions is by using Python’s special dunder methods.
+

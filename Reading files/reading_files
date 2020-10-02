@@ -1,0 +1,24 @@
+Reading a File:-We can use .read() to read a file.
+
+Iterating Through Lines:-We can use for loop to iterate through the file.
+
+Reading a Line:-Sometimes you don’t want to iterate through a whole file. For that, there’s a different file method, .readline(), which will only read a single line at a time.
+
+Writing a File:-Reading a file is all well and good, but what if we want to create a file of our own? With Python we can do just that. It turns out that our open() function that we’re using to open a file to read needs another argument to open a file to write to.
+
+Appending to a File:- we open it with 'a' for append-mode. 
+
+What's With "with"?:- It'll auto close the file otherwise you have to close file with .close() statement.
+
+Reading a CSV File:- In Python we can convert that data into a dictionary using the csv library’s DictReader object. 
+We pass the additional keyword argument newline='' to the file opening open() function so that we don’t accidentally mistake a line break in one of our data fields as a new row in our CSV
+
+Writing a CSV File:-
+.writeheader(), .writerow()
+
+Reading a JSON File:-
+Python comes with a json package that will help us parse JSON files into actual Python dictionaries. 
+json.load(), creating a Python dictionary out of the file. 
+
+Writing a JSON File:-json.dump() method to write to the file.
+

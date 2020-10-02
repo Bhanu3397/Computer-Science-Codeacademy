@@ -1,0 +1,74 @@
+pipenv:- (https://www.youtube.com/watch?v=BVr-6Ki96XM&feature=emb_title)
+Cut Me a Slice of String
+Not only can we select a single character from a string, we can select entire chunks of characters from a string.
+
+Concatenating Strings:-
+You can also concatenate two existing strings together into a new string. Consider the following two strings.
+
+immutable:-
+This is because strings are immutable. This means that we cannot change a string once it is created. We can use it to create other strings, but we cannot change the string itself.
+
+Escape characters:-
+favorite_fruit_conversation = "He said, \"blueberries are my favorite!\""
+
+Iterating through Strings:-
+You can iterate over a string or list of strings uisng loops.
+
+Strings and Conditionals:-
+favorite_fruit = "blueberry"
+counter = 0
+for character in favorite_fruit:
+  if character == "b":
+    counter = counter + 1
+print(counter)
+
+There’s an even easier way than iterating through the entire string to determine if a character is in a string. We can do this type of check more efficiently using in. 
+Check contains, common_letter functions in string-examples.py
+
+A string is a list of characters.
+A character can be selected from a string using its index string_name[index]. These indices start at 0.
+A ‘slice’ can be selected from a string. These can be between two indices or can be open-ended, selecting all of the string from a point.
+Strings can be concatenated to make larger strings.
+len() can be used to determine the number of characters in a string.
+Strings can be iterated through using for loops.
+Iterating through strings opens up a huge potential for applications, especially when combined with conditional statements.
+
+Splitting Strings:-
+
+We can also split strings using escape sequences. Escape sequences are used to indicate that we want to split by something in a string that is not necessarily a character. The two escape sequences we will cover here are
+\n Newline
+\t Horizontal Tab
+
+Joining Strings:-
+Now that you’ve learned to break strings apart using .split(), let’s learn to put them back together using .join(). .join() is essentially the opposite of .split(), it joins a list of strings together with a given delimiter. 
+
+String Methods:-
+.format()
+Python also provides a handy string method for including variables in strings. This method is .format()
+.format() takes variables as an argument and includes them in the string that it is run on. You include {} marks as placeholders for where those variables will be imported.
+
+.strip()
+When working with strings that come from real data, you will often find that the strings aren’t super clean. You’ll find lots of extra whitespace, unnecessary linebreaks, and rogue tabs.
+
+Replace
+The next string method we will cover is .replace(). Replace takes two arguments and replaces all instances of the first argument in a string with the second argument. 
+
+.find()
+Another interesting string method is .find(). .find() takes a string as an argument and searching the string it was run on for that string.
+
+.upper(), .title(), and .lower() adjust the casing of your string.
+.split() takes a string and creates a list of substrings.
+.join() takes a list of strings and creates a string.
+.strip() cleans off whitespace, or other noise from the beginning and end of a string.
+.replace() replaces all instances of a character/string in a string with another character/string.
+.find() searches a string for a character/string and returns the index value that character/string is found at.
+.format() and f-strings allow you to interpolate a string with variables.
+
+random.choice() which takes a list as an argument and returns a number from the list
+random.randint() which takes two numbers as arguments and generates a random number between the two numbers you passed in
+
+Python defaults to naming the namespace after the module being imported, but sometimes this name could be ambiguous or lengthy.
+Sometimes, the module’s name could also conflict with an object you have defined within your local namespace.
+Fortunately, this name can be altered by aliasing using the as keyword:
+import module_name as name_you_pick_for_the_module
+

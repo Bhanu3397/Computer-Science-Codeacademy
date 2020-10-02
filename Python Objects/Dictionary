@@ -1,0 +1,56 @@
+What is a Dictionary?
+A dictionary is an unordered set of key: value pairs.
+You can use a string, a number, a list, or even another dictionary as the value associated with a key!
+Example:-
+students_in_classes = {"software design": ["Aaron", "Delila", "Samson"], "cartography": ["Christopher", "Juan", "Marco"], "philosophy": ["Frederica", "Manuel"]}
+
+You can also mix and match key and value types. For example:
+person = {"name": "Shuri", "age": 18, "siblings": ["T'Chaka", "Ramonda"]}
+
+Add A Key
+To add a single key : value pair to a dictionary, we can use the syntax:
+my_dict["new_key"] = "new_value"
+
+Add Multiple Keys
+If we wanted to add multiple key : value pairs to a dictionary at once, we can use the .update() method.
+
+Overwrite Values
+We know that we can add a key by using syntax like:
+menu['avocado toast'] = 7
+
+List Comprehensions to Dictionaries:-
+zip() combines two lists into a zipped list of pairs.
+
+USING DICTIONARIES:-
+Get a key:-
+Once you have a dictionary, you can access the values in it by providing the key.
+
+Try/Except to Get a Key:-
+Safely Get a Key:-
+You can also specify a value to return if the key doesn’t exist. For example, we might want to return a building height of 0 if it is not in the dictionary.
+
+Delete a Key: pop
+
+dict_keys:-A dict_keys object is a view object, which provides a look at the current state of the dicitonary, without the user being able to modify anything. 
+The dict_keys object returned by .keys() is a set of the keys in the dictionary. You cannot add or remove elements from a dict_keys 
+
+Get All Values:-Dictionaries have a .values() method that returns a dict_values object (just like a dict_keys object but for values!) with all of the values in the dictionary. 
+
+Get All Items:-You can get both the keys and the values with the .items() method. Like .keys() and .values(), it returns a dict_list object. Each element of the dict_list returned by .items() is a tuple consisting of:
+(key, value)
+
+combo_meals = {1: ["hamburger", "fries"], 2: ["hamburger", "fries", "soda"], 4: ["veggie burger", "salad", "soda"], 6: ["hot dog", "apple slices", "orange juice"]}
+print(combo_meals.get(3, ["hamburger", "fries"])
+
+""" There is no key 3 in this dictionary, so the default provided to the .get() function, ["hamburger", "fries"], will be printed."""
+
+
+raffle = {223842: "Teddy Bear", 872921: "Concert Tickets", 320291: "Gift Basket", 412123: "Necklace", 298787: "Pasta Maker"}
+raffle.pop(561721, "No Value")
+print(raffle)
+
+"""The command .pop() will try to remove the nonexistent key 561721 from the dictionary, so raffle will remain unchanged.""'"
+
+inventory = {"iron spear": 12, "invisible knife": 30, "needle of ambition": 10, "stone glove": 20, "the peacemaker": 65, "demonslayer": 50}
+print(12 in inventory) // False
+
